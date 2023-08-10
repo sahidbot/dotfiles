@@ -11,10 +11,11 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+require("config").init()
+
 require("lazy").setup({
   spec = {
-    -- { import = "nyxvim.plugins" },
-    -- { import = "nyxvim.plugins.extras.lang.json" },
+    { import = "plugins" },
   },
   defaults = {
     lazy = false,
@@ -41,3 +42,5 @@ require("lazy").setup({
     },
   },
 })
+
+require("config").setup({})
