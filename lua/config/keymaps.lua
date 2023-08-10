@@ -108,8 +108,7 @@ end
 -- stylua: ignore start
 
 -- toggle options
--- TODO: Enable after setting up lsp
--- map("n", "<leader>uf", require("plugins.lsp.format").toggle, { desc = "Toggle format on Save" })
+map("n", "<leader>uf", require("plugins.lsp.format").toggle, { desc = "Toggle format on Save" })
 map("n", "<leader>us", function() Util.toggle("spell") end, { desc = "Toggle Spelling" })
 map("n", "<leader>uw", function() Util.toggle("wrap") end, { desc = "Toggle Word Wrap" })
 map("n", "<leader>ul", function() Util.toggle_number() end, { desc = "Toggle Line Numbers" })

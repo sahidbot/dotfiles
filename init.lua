@@ -12,9 +12,14 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("config").init()
+
 require("lazy").setup({
   spec = {
     { import = "plugins" },
+    { import = "plugins.extras.lang.docker" },
+    { import = "plugins.extras.lang.json" },
+    { import = "plugins.extras.lang.lua" },
+    { import = "plugins.extras.lang.typescript" },
   },
   defaults = {
     lazy = false,
@@ -41,4 +46,20 @@ require("lazy").setup({
     },
   },
 })
-require("config").setup({})
+
+require("config").setup({
+  -- treesitter parsers
+  ensure_installed = {
+    "bash",
+    "c",
+    "html",
+    "markdown",
+    "markdown_inline",
+    "python",
+    "query",
+    "regex",
+    "vim",
+    "vimdoc",
+    "yaml",
+  },
+})
