@@ -16,6 +16,7 @@ require("config").init()
 require("lazy").setup({
   spec = {
     { import = "plugins" },
+    { import = "plugins.extras.dap.core" },
     { import = "plugins.extras.lang.docker" },
     { import = "plugins.extras.lang.json" },
     { import = "plugins.extras.lang.lua" },
