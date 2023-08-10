@@ -187,16 +187,6 @@ return {
     },
   },
 
-  -- popup for keybindings
-  {
-    "folke/which-key.nvim",
-    opts = function(_, opts)
-      if require("util").has("noice.nvim") then
-        opts.defaults["<leader>sn"] = { name = "+noice" }
-      end
-    end,
-  },
-
   -- Dashboard. This runs when neovim starts, and is what displays
   -- the banner.
   {
