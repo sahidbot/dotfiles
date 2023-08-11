@@ -17,7 +17,7 @@ packages:
   - path: lua/plugins/extras/lang/docker.lua
     treesitter:
       - dockerfile
-    linters:
+    linter:
       - name: hadolint
         nix: hadolint
         url: https://github.com/hadolint/hadolint
@@ -48,7 +48,7 @@ packages:
       - lua
       - luadoc
       - luap
-    linters:
+    linter:
       - name: stylua
         nix: stylua
         url: https://github.com/JohnnyMorganz/StyLua
@@ -63,7 +63,7 @@ packages:
       - python
       - rst
       - toml
-    linters:
+    linter:
       - name: pyright
         nix: nodePackages_latest.pyright
         url: https://github.com/microsoft/pyright
@@ -86,3 +86,14 @@ packages:
         nix: NOT_AVAILABLE
         url: https://github.com/microsoft/vscode-js-debug
 
+  - path: lua/plugins/extras/formatting/prettier.lua
+    linter:
+      - name: prettierd
+        nix: prettierd
+        url: https://github.com/fsouza/prettierd
+
+  - path: lua/plugins/extras/linting/eslint.lua
+    lsp:
+      - name: eslint
+        nix: nodePackages_latest.eslint
+        url: https://github.com/Microsoft/vscode-eslint

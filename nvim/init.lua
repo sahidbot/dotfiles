@@ -29,6 +29,10 @@ require("lazy").setup({
     { import = "plugins.extras.lang.lua" },
     { import = "plugins.extras.lang.python" },
     { import = "plugins.extras.lang.typescript" },
+
+    -- additional linters and formatters
+    -- { import = "plugins.extras.formatting.prettier" },
+    -- { import = "plugins.extras.linting.eslint" },
   },
   defaults = {
     lazy = false,
