@@ -53,6 +53,21 @@ packages:
         nix: lua-language-server
         url: https://github.com/LuaLS/lua-language-server
 
+  - path: lua/plugins/extras/lang/python.lua
+    treesitter:
+      - ninja
+      - python
+      - rst
+      - toml
+    linters:
+      - name: pyright
+        nix: nodePackages_latest.pyright
+        url: https://github.com/microsoft/pyright
+    lsp:
+      - name: ruff_lsp
+        nix: ruff-lsp
+        url: https://github.com/astral-sh/ruff-lsp
+
   - path: lua/plugins/extras/lang/typescript.lua
     treesitter:
       - typescript
