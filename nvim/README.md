@@ -70,3 +70,40 @@ will be automatically loaded by [lazy.nvim](https://github.com/folke/lazy.nvim)
 │       └── spec2.lua
 └── init.lua
 </pre>
+
+## Configurations
+
+### Add new parsers to treesitter:
+
+**./nvim/lua/plugins/treesitter.lua**
+```lua
+{
+  "nvim-treesitter/nvim-treesitter",
+  ...
+  
+  opts = {
+    ...
+
+    ensure_installed = {
+      ...
+      python
+    },
+  },
+}
+```
+
+### Auto format on save:
+
+**./nvim/lua/plugins/lsp/init.lua**
+```lua
+{
+  "neovim/nvim-lspconfig",
+  ...
+  
+  opts = {
+    ...
+
+    autoformat = true,
+  },
+}
+```

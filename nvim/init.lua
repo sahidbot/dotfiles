@@ -60,18 +60,4 @@ require("lazy").setup({
   },
 })
 
-require("config").setup({
-  -- treesitter parsers
-  ensure_installed = {
-    "bash",
-    "c",
-    "html",
-    "markdown",
-    "markdown_inline",
-    "query",
-    "regex",
-    "vim",
-    "vimdoc",
-    "yaml",
-  },
-})
+require("config").setup({})

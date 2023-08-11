@@ -1,6 +1,6 @@
 treesitter: vimPlugins.nvim-treesitter-parsers.$PARSER_NAME
 packages:
-  - path: init.lua
+  - path: lua/plugins/treesitter.lua
     treesitter:
       - bash
       - c
