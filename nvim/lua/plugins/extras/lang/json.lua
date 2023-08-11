@@ -1,17 +1,5 @@
 return {
 
-  --[[
-  programs.neovim.plugins = [
-    # treesitters
-    vimPlugins.nvim-treesitter-parsers.json
-    vimPlugins.nvim-treesitter-parsers.json5
-    vimPlugins.nvim-treesitter-parsers.jsonc
-
-    # language servers
-    nodePackages_latest.vscode-json-languageserver
-  ];
-  --]]
-
   -- add json to treesitter
   {
     "nvim-treesitter/nvim-treesitter",

@@ -1,0 +1,69 @@
+treesitter: vimPlugins.nvim-treesitter-parsers.$PARSER_NAME
+packages:
+  - path: init.lua
+    treesitter:
+      - bash
+      - c
+      - html
+      - markdown
+      - markdown_inline
+      - python
+      - query
+      - regex
+      - vim
+      - vimdoc
+      - yaml
+
+  - path: lua/plugins/extras/lang/docker.lua
+    treesitter:
+      - dockerfile
+    linters:
+      - name: hadolint
+        nix: hadolint
+        url: https://github.com/hadolint/hadolint
+    lsp:
+      - name: dockerls
+        nix: nodePackages_latest.dockerfile-language-server-nodejs
+        url: https://github.com/rcjsuen/dockerfile-language-server-nodejs
+      - name: docker_compose_language_service
+        nix: docker-compose-language-service
+        url: https://github.com/microsoft/compose-language-service
+
+  - path: lua/plugins/extras/lang/json.lua
+    treesitter:
+      - json
+      - json5
+      - jsonc
+    lsp:
+      - name: jsonls
+        nix: nodePackages_latest.vscode-json-languageserver
+        url: https://github.com/microsoft/vscode-json-languageservice
+
+  - path: lua/plugins/extras/lang/lua.lua
+    treesitter:
+      - lua
+      - luadoc
+      - luap
+    linters:
+      - name: stylua
+        nix: stylua
+        url: https://github.com/JohnnyMorganz/StyLua
+    lsp:
+      - name: lua_ls
+        nix: lua-language-server
+        url: https://github.com/LuaLS/lua-language-server
+
+  - path: lua/plugins/extras/lang/typescript.lua
+    treesitter:
+      - typescript
+      - tsx
+      - javascript
+    lsp:
+      - name: tsserver
+        nix: nodePackages_latest.typescript-language-server
+        url: https://github.com/typescript-language-server/typescript-language-server
+    dap:
+      - name: js-debug-adapter
+        nix: NOT_AVAILABLE
+        url: https://github.com/microsoft/vscode-js-debug
+

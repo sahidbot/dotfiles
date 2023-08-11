@@ -1,19 +1,5 @@
 return {
 
-  --[[
-  programs.neovim.plugins = [
-    # treesitters
-    vimPlugins.nvim-treesitter-parsers.dockerfile
-
-    # linters
-    hadolint
-
-    # language servers
-    nodePackages_latest.dockerfile-language-server-nodejs
-    docker-compose-language-service
-  ];
-  --]]
-
   -- add dockerfile and docker-compose to treesitter
   {
     "nvim-treesitter/nvim-treesitter",

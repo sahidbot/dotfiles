@@ -1,20 +1,5 @@
 return {
 
-  --[[
-  programs.neovim.plugins = [
-    # treesitters
-    vimPlugins.nvim-treesitter-parsers.typescript
-    vimPlugins.nvim-treesitter-parsers.tsx
-    vimPlugins.nvim-treesitter-parsers.javascript
-
-    # linters
-    stylua
-
-    # language servers
-    nodePackages_latest.typescript-language-server
-  ];
-  --]]
-
   -- add typescript and javascript to treesitter
   {
     "nvim-treesitter/nvim-treesitter",

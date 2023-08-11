@@ -1,20 +1,5 @@
 return {
 
-  --[[
-  programs.neovim.plugins = [
-    # treesitters
-    vimPlugins.nvim-treesitter-parsers.lua
-    vimPlugins.nvim-treesitter-parsers.luadoc
-    vimPlugins.nvim-treesitter-parsers.luap
-
-    # linters
-    stylua
-
-    # language servers
-    lua-language-server
-  ];
-  --]]
-
   -- add json to treesitter
   {
     "nvim-treesitter/nvim-treesitter",
