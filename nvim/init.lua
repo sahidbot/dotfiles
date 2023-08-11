@@ -18,6 +18,7 @@ require("lazy").setup({
     { import = "plugins" },
     { import = "plugins.extras.dap.core" },
     { import = "plugins.extras.lang.docker" },
+    { import = "plugins.extras.lang.fish" },
     { import = "plugins.extras.lang.json" },
     { import = "plugins.extras.lang.lua" },
     { import = "plugins.extras.lang.python" },

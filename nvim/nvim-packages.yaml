@@ -29,6 +29,10 @@ packages:
         nix: docker-compose-language-service
         url: https://github.com/microsoft/compose-language-service
 
+  - path: lua/plugins/extras/lang/fish.lua
+    treesitter:
+      - fish
+
   - path: lua/plugins/extras/lang/json.lua
     treesitter:
       - json

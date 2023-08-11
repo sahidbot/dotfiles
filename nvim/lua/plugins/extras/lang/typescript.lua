@@ -1,5 +1,4 @@
 return {
-
   -- add typescript and javascript to treesitter
   {
     "nvim-treesitter/nvim-treesitter",

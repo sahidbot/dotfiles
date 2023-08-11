@@ -1,5 +1,4 @@
 return {
-
   -- add dockerfile and docker-compose to treesitter
   {
     "nvim-treesitter/nvim-treesitter",
@@ -35,5 +34,4 @@ return {
       },
     },
   },
-
 }

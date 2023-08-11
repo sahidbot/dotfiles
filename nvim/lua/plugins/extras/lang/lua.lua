@@ -1,5 +1,4 @@
 return {
-
   -- add json to treesitter
   {
     "nvim-treesitter/nvim-treesitter",
@@ -80,5 +79,4 @@ return {
       },
     },
   },
-
 }
