@@ -29,9 +29,8 @@ require("lazy").setup({
     { import = "plugins.extras.lang.fish" },
     { import = "plugins.extras.lang.json" },
     { import = "plugins.extras.lang.lua" },
-    { import = "plugins.extras.lang.nix" },
     { import = "plugins.extras.lang.python" },
-    { import = "plugins.extras.lang.tex" },
+    -- { import = "plugins.extras.lang.tex" },
     { import = "plugins.extras.lang.typescript" },
     { import = "plugins.extras.lang.yaml" },
 

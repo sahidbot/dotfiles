@@ -36,6 +36,7 @@ return {
         "html",
         "markdown",
         "markdown_inline",
+        "nix",
         "query",
         "regex",
         "vim",
