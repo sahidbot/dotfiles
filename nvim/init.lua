@@ -23,11 +23,15 @@ require("lazy").setup({
     { import = "plugins.extras.test.core" },
 
     -- languages
+    -- { import = "plugins.extras.lang.clangd" },
+    -- { import = "plugins.extras.lang.cmake" },
     { import = "plugins.extras.lang.docker" },
     { import = "plugins.extras.lang.fish" },
     { import = "plugins.extras.lang.json" },
     { import = "plugins.extras.lang.lua" },
+    -- { import = "plugins.extras.lang.nix" },
     { import = "plugins.extras.lang.python" },
+    { import = "plugins.extras.lang.tex" },
     { import = "plugins.extras.lang.typescript" },
 
     -- additional linters and formatters
