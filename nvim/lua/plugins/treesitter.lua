@@ -41,7 +41,6 @@ return {
         "regex",
         "vim",
         "vimdoc",
-        "yaml",
       },
       incremental_selection = {
         enable = true,

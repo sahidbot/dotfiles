@@ -33,6 +33,7 @@ require("lazy").setup({
     { import = "plugins.extras.lang.python" },
     { import = "plugins.extras.lang.tex" },
     { import = "plugins.extras.lang.typescript" },
+    { import = "plugins.extras.lang.yaml" },
 
     -- additional linters and formatters
     -- { import = "plugins.extras.formatting.prettier" },
