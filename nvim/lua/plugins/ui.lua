@@ -31,7 +31,7 @@ return {
     end,
   },
 
-   -- better vim.ui
+  -- better vim.ui
   {
     "stevearc/dressing.nvim",
     lazy = true,
@@ -186,10 +186,12 @@ return {
       show_current_context = true,
     },
     keys = {
-      { "<leader>uh",
+      {
+        "<leader>uh",
         function()
           vim.g.indent_blankline_show_current_context = not vim.g.indent_blankline_show_current_context
-        end, desc = "Toggle highlight indentline"
+        end,
+        desc = "Toggle highlight indentline",
       },
     },
   },
@@ -201,30 +203,30 @@ return {
     event = "VimEnter",
     opts = function()
       local dashboard = require("alpha.themes.dashboard")
-      --       local logo = [[
-      --      _                         _
-      --     |_|                       |_|
-      --     | |         /^^^\         | |
-      --    _| |_      (| "o" |)      _| |_
-      --  _| | | | _    (_---_)    _ | | | |_
-      -- | | | | |' |    _| |_    | `| | | | |
-      -- \          /   /     \   \          /
-      --  \        /  / /(. .)\ \  \        /
-      --    \    /  / /  | . |  \ \  \    /
-      --      \  \/ /    ||Y||    \ \/  /
-      --        \_/      || ||      \_/
-      --                 () ()
-      --                 || ||
-      --                ooO Ooo
-      --       ]]
       local logo = [[
-███╗   ██╗██╗   ██╗██╗  ██╗██╗   ██╗██╗███╗   ███╗
-████╗  ██║╚██╗ ██╔╝╚██╗██╔╝██║   ██║██║████╗ ████║
-██╔██╗ ██║ ╚████╔╝  ╚███╔╝ ██║   ██║██║██╔████╔██║
-██║╚██╗██║  ╚██╔╝   ██╔██╗ ╚██╗ ██╔╝██║██║╚██╔╝██║
-██║ ╚████║   ██║   ██╔╝ ██╗ ╚████╔╝ ██║██║ ╚═╝ ██║
-╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝  ╚═══╝  ╚═╝╚═╝     ╚═╝
-            ]]
+     _                         _
+    |_|                       |_|
+    | |         /^^^\         | |
+   _| |_      (| "o" |)      _| |_
+ _| | | | _    (_---_)    _ | | | |_
+| | | | |' |    _| |_    | `| | | | |
+\          /   /     \   \          /
+ \        /  / /(. .)\ \  \        /
+   \    /  / /  | . |  \ \  \    /
+     \  \/ /    ||Y||    \ \/  /
+       \_/      || ||      \_/
+                () ()
+                || ||
+               ooO Ooo
+      ]]
+      --       local logo = [[
+      -- ███╗   ██╗██╗   ██╗██╗  ██╗██╗   ██╗██╗███╗   ███╗
+      -- ████╗  ██║╚██╗ ██╔╝╚██╗██╔╝██║   ██║██║████╗ ████║
+      -- ██╔██╗ ██║ ╚████╔╝  ╚███╔╝ ██║   ██║██║██╔████╔██║
+      -- ██║╚██╗██║  ╚██╔╝   ██╔██╗ ╚██╗ ██╔╝██║██║╚██╔╝██║
+      -- ██║ ╚████║   ██║   ██╔╝ ██╗ ╚████╔╝ ██║██║ ╚═╝ ██║
+      -- ╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝  ╚═══╝  ╚═╝╚═╝     ╚═╝
+      --             ]]
 
       dashboard.section.header.val = vim.split(logo, "\n")
       dashboard.section.buttons.val = {
@@ -302,5 +304,4 @@ return {
 
   -- ui components
   { "MunifTanjim/nui.nvim", lazy = true },
-
 }
