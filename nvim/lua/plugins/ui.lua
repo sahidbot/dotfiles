@@ -185,6 +185,13 @@ return {
       show_trailing_blankline_indent = false,
       show_current_context = true,
     },
+    keys = {
+      { "<leader>uh",
+        function()
+          vim.g.indent_blankline_show_current_context = not vim.g.indent_blankline_show_current_context
+        end, desc = "Toggle highlight indentline"
+      },
+    },
   },
 
   -- Dashboard. This runs when neovim starts, and is what displays
