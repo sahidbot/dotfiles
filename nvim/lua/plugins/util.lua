@@ -27,4 +27,6 @@ return {
   -- library used by other plugins
   { "nvim-lua/plenary.nvim", lazy = true },
 
+  -- nvim-tmux-navigation
+  { "christoomey/vim-tmux-navigator" },
 }
