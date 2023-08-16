@@ -94,8 +94,8 @@ return {
 
   -- auto pairs
   {
-    "echasnovski/mini.pairs",
-    event = "VeryLazy",
+    "windwp/nvim-autopairs",
+    event = "InsertEnter",
     opts = {},
   },
 
@@ -220,5 +220,4 @@ return {
       end)
     end,
   },
-
 }
